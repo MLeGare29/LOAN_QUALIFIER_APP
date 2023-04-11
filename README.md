@@ -29,7 +29,7 @@ In this section, you should include detailed installation notes containing code 
 Installation for Python Fire in Bash: `pip install fire`
 
 Installation for the Questionary in Bash: `pip install questionary`
----
+
 ## Usage
 
 To use this application, you can clone the link to the repository and run the **app.py** code with:
