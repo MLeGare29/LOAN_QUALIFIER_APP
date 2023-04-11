@@ -42,6 +42,7 @@ app.py
 ## Contributors
 
 *Marcus LeGare(Author, Developer)*
+
 *Monal Patel(Learning Assistant)*
 ---
 
