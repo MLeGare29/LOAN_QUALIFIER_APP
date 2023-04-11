@@ -13,8 +13,6 @@ This cutting edge and efficient app is powered by data stored in Microsoft Offic
 
 * [Data](https://www.microsoft.com/en-us/microsoft-365/excel): Enables the user to read compiled data and write their own based on the information they provided.
 
-**Subscriptions may be required for some programs**
----
 
 ## Installation Guide
 
