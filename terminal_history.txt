@@ -1,0 +1,50 @@
+   83  git push
+   84  git add qualifier
+   85  git commit -m "The function and path for save_csv was cut from app.py and pasted and saved into the qualifier.utils module code."
+   86  git push
+   87  git add app.py
+   88  git commit -m "Integrated the usability feature into the app.py code that allows users to save qualifying loans."
+   89  git push
+   90  git add README.md
+   91  git commit -m "Added the Title and project description to the README.md file."
+   92  git push
+   93  git add README.md
+   94  git commit -m "Added the descriptions of the technologies used in the program to the Technologies section of the README.md."
+   95  git push
+   96  git add README.md
+   97  git commit -m "Added the code block for python, fire, and questionary. In addition to the code blocks, I added screenshots of how/where to download them."
+   98  git push
+   99  git add README.md
+  100  git commit -m "Edited the Installations Guide."
+  101  git push
+  102  git add README.md
+  103  git commit -m "Added the Usage, Contributors, and Licenses sections of the README.md file. In addition, added aesthetic changes to the file."
+  104  git push
+  105  git add README.md
+  106  git commit -m "Added an aesthetic change to the Contributors section."
+  107  git push
+  108  git add README.md
+  109  git commit -m "Added aesthetic change to Contributors section."
+  110  git push
+  111  git add README.md
+  112  git commit -m "Added an aesthetic change to the Installation Guide section."
+  113  git push
+  114  git add README.md
+  115  git commit -m "Added aesthetic changes to the Technologies section in README.md."
+  116  git push
+  117  git add README.md
+  118  git commit -m "Added an aesthetic change to the Technologies section of README.md."
+  119  git push
+  120  git add README.md
+  121  git commit -m "Added aesthetic changes to the Installation guide section in the README.md file."
+  122  git push
+  123  cd ..
+  124  touch history 50 > terminal_history.txt
+  125  git status
+  126  cd M2_CHALLENGE
+  127  touch history 50 > terminal_history.txt
+  128  git status
+  129  git add terminal_history.txt
+  130  git commit -m "Adding the terminal history text document."
+  131  git push
+  132  history 50 > terminal_history.txt
