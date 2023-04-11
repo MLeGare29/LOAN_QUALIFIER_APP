@@ -7,6 +7,7 @@
 ## Technologies
 
 --- This cutting edge and efficient app is powered by data stored in Microsoft Office and the retrieval of this data using Python 3.9.13. The following program packages were implemented:
+
 * [Python Fire](https://github.com/google/python-fire) - Enables the Command Line Interface.
 
 * [Questionary](https://github.com/tmbo/questionary): Enables interactivity via user prompts and dialogues.
@@ -17,7 +18,17 @@
 
 In this section, you should include detailed installation notes containing code blocks and screenshots.
 
----
+--- In order for this file to run, you must install the following programs:
+
+```python
+   pip install fire
+   pip install questionary
+```
+![Python installation window](image.png)
+
+![Installation for Python Fire in Bash](image.png)
+
+![Installation screenshot for the Questionary in Bash](image.png)
 
 ## Usage
 
