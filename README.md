@@ -24,11 +24,9 @@ In this section, you should include detailed installation notes containing code 
    pip install fire
    pip install questionary
 ```
-![Python installation window](image.png)
+Installation for Python Fire in Bash: `pip install fire`
 
-![Installation for Python Fire in Bash](image.png)
-
-![Installation screenshot for the Questionary in Bash](image.png)
+Installation for the Questionary in Bash: `pip install questionary`
 
 ## Usage
 
