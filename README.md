@@ -7,11 +7,11 @@
 
 This cutting edge and efficient app is powered by data stored in Microsoft Office and the retrieval of this data using Python 3.9.13. The following program packages were implemented:
 
-* [Python Fire](https://github.com/google/python-fire) - Enables the Command Line Interface.
+* [Python Fire](https://github.com/google/python-fire)  Enables the Command Line Interface.
 
-* [Questionary](https://github.com/tmbo/questionary): Enables interactivity via user prompts and dialogues.
+* [Questionary](https://github.com/tmbo/questionary)  Enables interactivity via user prompts and dialogues.
 
-* [Data](https://www.microsoft.com/en-us/microsoft-365/excel): Enables the user to read compiled data and write their own based on the information they provided.
+* [Data](https://www.microsoft.com/en-us/microsoft-365/excel)  Enables the user to read compiled data and write their own based on the information they provided.
 
 
 ## Installation Guide
