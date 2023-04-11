@@ -44,7 +44,7 @@ app.py
 *Marcus LeGare(Author, Developer)*
 
 *Monal Patel(Learning Assistant)*
----
+
 
 ## License
 
