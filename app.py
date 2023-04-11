@@ -11,7 +11,7 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv, save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -109,14 +109,27 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+ def save_csv(csvpath):
+    
+    csvpath = Path("qualifying_loans.csv")
+
+    with open(csvpath, "w") as csvfile:
+        data = []
+
+        csvwriter = csv.writer(csvfile, delimiter=",")
+
+        next(csvwriter)
+
+        for save in save_csv:
+            csvwriter.writerow(save.values())
+    return data
 
 
-def run():
+def run(bank_data, credit_score, debt, loan_amount, home_value):
     """The main function for running the script."""
 
     # Load the latest Bank data
-    bank_data = load_bank_data()
+    bank_data = load_bank_data('..data\daily_rate_sheet.csv')
 
     # Get the applicant's information
     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
