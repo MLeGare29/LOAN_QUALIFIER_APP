@@ -16,8 +16,6 @@ This cutting edge and efficient app is powered by data stored in Microsoft Offic
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
-
  In order for this file to run, you must install the following programs:
 
 ```python
