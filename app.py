@@ -128,9 +128,7 @@ def run(bank_data, credit_score, debt, loan_amount, home_value):
     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
 
     # Find qualifying loans
-    qualifying_loans = find_qualifying_loans(
-        bank_data, credit_score, debt, income, loan_amount, home_value
-    )
+    qualifying_loans = find_qualifying_loans()
 
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
