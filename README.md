@@ -35,7 +35,7 @@ app.py
 ```
 **A prompt will appear when the program is engaged**
 
-![Screenshot of the prompt requesting user input](C:\Users\legar\Desktop\PICTURES\usability.png)
+![Screenshot of the prompt requesting user input]("C:\Users\legar\Desktop\PICTURES\usability.png")
 
 ## Contributors
 
