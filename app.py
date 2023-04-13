@@ -109,26 +109,28 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    save_loan = questionary.text("Would you like to save the qualifying loans?").confirm().ask()
-    csvpath = Path(save_csv)    
+    
     if not qualifying_loans:
         sys.exit("Sorry to inform you, there are no qualifying loans at this time.")
+
+    save_loan = questionary.confirm("Would you like to save the qualifying loans?").ask()
+    
     if save_loan:
         csvpath = questionary.text("Please insert the filepath for the saved data (.csv): ").ask()
-    save_csv = (Path(csvpath), qualifying_loans)
-    return save_csv(csvpath)
+        save_csv(Path(csvpath), qualifying_loans)
+    
 
-def run(bank_data, credit_score, debt, loan_amount, home_value):
+def run():
     """The main function for running the script."""
 
     # Load the latest Bank data
-    bank_data = load_bank_data('..data\daily_rate_sheet.csv')
+    bank_data = load_bank_data()
 
     # Get the applicant's information
     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
 
     # Find qualifying loans
-    qualifying_loans = find_qualifying_loans()
+    qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
 
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
