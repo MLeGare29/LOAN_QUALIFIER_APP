@@ -34,12 +34,16 @@ To use this application, you can clone the link to the repository and run the **
 app.py
 ```
 **A prompt will appear when the program is engaged**
----
+
+![Screenshot of the prompt requesting user input](C:\Users\legar\Desktop\PICTURES\usability.png)
+
 ## Contributors
 
-*Marcus LeGare(Author, Developer)*
+*Marcus LeGare (Author, Developer)*
 
-*Monal Patel(Learning Assistant)*
+*Monal Patel (Learning Assistant)*
+
+*Santiago Pedemonte (Teaching Assistant)*
 
 
 ## License
