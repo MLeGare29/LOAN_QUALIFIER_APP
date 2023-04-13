@@ -36,16 +36,10 @@ def load_csv(csvpath):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
 
-def save_csv(csvpath):
-    csvpath = Path("qualifying_loans.csv")
+def save_csv(csvpath, data):
 
     with open(csvpath, "w") as csvfile:
-        data = []
 
         csvwriter = csv.writer(csvfile, delimiter=",")
 
-        next(csvwriter)
-
-        for save in save_csv:
-            csvwriter.writerow(save.values())
-    return data
+        csvwriter.writerows(data)
