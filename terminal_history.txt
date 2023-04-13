@@ -1,50 +1,89 @@
-   83  git push
-   84  git add qualifier
-   85  git commit -m "The function and path for save_csv was cut from app.py and pasted and saved into the qualifier.utils module code."
-   86  git push
-   87  git add app.py
-   88  git commit -m "Integrated the usability feature into the app.py code that allows users to save qualifying loans."
-   89  git push
-   90  git add README.md
-   91  git commit -m "Added the Title and project description to the README.md file."
-   92  git push
-   93  git add README.md
-   94  git commit -m "Added the descriptions of the technologies used in the program to the Technologies section of the README.md."
-   95  git push
-   96  git add README.md
-   97  git commit -m "Added the code block for python, fire, and questionary. In addition to the code blocks, I added screenshots of how/where to download them."
-   98  git push
-   99  git add README.md
-  100  git commit -m "Edited the Installations Guide."
-  101  git push
-  102  git add README.md
-  103  git commit -m "Added the Usage, Contributors, and Licenses sections of the README.md file. In addition, added aesthetic changes to the file."
-  104  git push
-  105  git add README.md
-  106  git commit -m "Added an aesthetic change to the Contributors section."
-  107  git push
-  108  git add README.md
-  109  git commit -m "Added aesthetic change to Contributors section."
-  110  git push
-  111  git add README.md
-  112  git commit -m "Added an aesthetic change to the Installation Guide section."
-  113  git push
-  114  git add README.md
-  115  git commit -m "Added aesthetic changes to the Technologies section in README.md."
-  116  git push
-  117  git add README.md
-  118  git commit -m "Added an aesthetic change to the Technologies section of README.md."
-  119  git push
-  120  git add README.md
-  121  git commit -m "Added aesthetic changes to the Installation guide section in the README.md file."
-  122  git push
-  123  cd ..
-  124  touch history 50 > terminal_history.txt
-  125  git status
-  126  cd M2_CHALLENGE
-  127  touch history 50 > terminal_history.txt
-  128  git status
-  129  git add terminal_history.txt
-  130  git commit -m "Adding the terminal history text document."
-  131  git push
-  132  history 50 > terminal_history.txt
+    1  export CONDA_EXE='/cygdrive/c/Users/legar/anaconda3/Scripts/conda.exe'
+    2  export _CE_M=''
+    3  export _CE_CONDA=''
+    4  export CONDA_PYTHON_EXE='C:\Users\legar\anaconda3\python.exe'
+    5  # Copyright (C) 2012 Anaconda, Inc
+    6  # SPDX-License-Identifier: BSD-3-Clause
+    7  __conda_exe() (     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
+    8  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass
+    9      else         \hash -r;     fi; }
+   10  __conda_activate() {     if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+   11          PS1="$CONDA_PS1_BACKUP";         \unset CONDA_PS1_BACKUP;     fi;     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   12  __conda_reactivate() {     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   13  conda() {     \local cmd="${1-__missing__}";     case "$cmd" in         activate|deactivate)             __conda_activate "$@";             ;;         install|update|upgrade|remove|uninstall)             __conda_exe "$@" || \return;             __conda_reactivate;             ;;         *)             __conda_exe "$@";             ;;     esac; }
+   14  if [ -z "${CONDA_SHLVL+x}" ]; then     \export CONDA_SHLVL=0
+   15      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH; 
+   16      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   17  export CONDA_EXE='/cygdrive/c/Users/legar/anaconda3/Scripts/conda.exe'
+   18  export _CE_M=''
+   19  export _CE_CONDA=''
+   20  export CONDA_PYTHON_EXE='C:\Users\legar\anaconda3\python.exe'
+   21  # Copyright (C) 2012 Anaconda, Inc
+   22  # SPDX-License-Identifier: BSD-3-Clause
+   23  __conda_exe() (     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
+   24  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass
+   25      else         \hash -r;     fi; }
+   26  __conda_activate() {     if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+   27          PS1="$CONDA_PS1_BACKUP";         \unset CONDA_PS1_BACKUP;     fi;     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   28  __conda_reactivate() {     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   29  conda() {     \local cmd="${1-__missing__}";     case "$cmd" in         activate|deactivate)             __conda_activate "$@";             ;;         install|update|upgrade|remove|uninstall)             __conda_exe "$@" || \return;             __conda_reactivate;             ;;         *)             __conda_exe "$@";             ;;     esac; }
+   30  if [ -z "${CONDA_SHLVL+x}" ]; then     \export CONDA_SHLVL=0
+   31      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH; 
+   32      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   33  export CONDA_EXE='/cygdrive/c/Users/legar/anaconda3/Scripts/conda.exe'
+   34  export _CE_M=''
+   35  export _CE_CONDA=''
+   36  export CONDA_PYTHON_EXE='C:\Users\legar\anaconda3\python.exe'
+   37  # Copyright (C) 2012 Anaconda, Inc
+   38  # SPDX-License-Identifier: BSD-3-Clause
+   39  __conda_exe() (     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
+   40  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass
+   41      else         \hash -r;     fi; }
+   42  __conda_activate() {     if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+   43          PS1="$CONDA_PS1_BACKUP";         \unset CONDA_PS1_BACKUP;     fi;     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   44  __conda_reactivate() {     \local ask_conda;     ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return;     \eval "$ask_conda";     __conda_hashr; }
+   45  conda() {     \local cmd="${1-__missing__}";     case "$cmd" in         activate|deactivate)             __conda_activate "$@";             ;;         install|update|upgrade|remove|uninstall)             __conda_exe "$@" || \return;             __conda_reactivate;             ;;         *)             __conda_exe "$@";             ;;     esac; }
+   46  if [ -z "${CONDA_SHLVL+x}" ]; then     \export CONDA_SHLVL=0
+   47      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH; 
+   48      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   49  cd desktop
+   50  cd CU-CHALLENGES/
+   51  ls
+   52  cd M2_CHALLENGE
+   53  ls
+   54  cd M2_CHALLENGE/
+   55  ls
+   56  conda activate dev
+   57  python app.py
+   58  app.py --helop
+   59  app.py --help
+   60  git add app.py
+   61  git commit -m "Made a change to the code in app.py."
+   62  git push
+   63  git add README.md
+   64  git commit -m "Made an additional change to the README.md file."
+   65  git push
+   66  python app.py
+   67  python app.py
+   68  python app.py
+   69  clear
+   70  python app.py
+   71  python app.py
+   72  git add data
+   73  git commit -m "Addition of the qualifying loans csv."
+   74  git push
+   75  git add qualifier
+   76  git commit -m "Changes to save csv within the fileio.py within utils." 
+   77  git push
+   78  git add app.py
+   79  git commit -m "Made changes to the save_qualifying_loans() function and qualifying loans within the run() function."
+   80  git push
+   81  python app.py
+   82  git add README.md
+   83  git commit -m "Added a screenshot image of the prompt in the command line and added an additional contributor."
+   84  git push
+   85  git add README.md
+   86  git commit -m "Added a change to the image in the Usability section of the README.md file."
+   87  git push
+   88  history 50 > terminal_history.txt
+   89  history 100 > terminal_history.txt
