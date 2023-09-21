@@ -1,4 +1,3 @@
-# M2_CHALLENGE
 # Loan Qualifier Application
 
  Welcome! This is an interactive, easy to use Command Line Interface(CLI) application that engages the user in the process of determining if they qualify for loans offered by the most trusted and renowned lenders in the industry. This app works using our compiled lending data from these lenders and using this data as the foundation for the criteria that the user's personal information will be measured to in order to determine their eligability. Once the data is processed, if they qualify, they will receive a list of the lenders who are able to fulfill their loan request.
